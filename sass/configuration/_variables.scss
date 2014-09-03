@@ -23,23 +23,6 @@ $link-color-hover:                darken($link-color, 10%);
 
 
 
-// Navigation
-//==========================================================================
-
-$navigation-wrapper:              $color-primary-dark;
-
-
-
-// Labels
-//==========================================================================
-
-$label-bg-color:                  $color-secondary !default;
-$label-bg-color-hover:            darken($label-bg-color, 10%) !default;
-$label-text-color:                $white !default;
-$label-text-color-hover:          darken($white, 10%) !default;
-
-
-
 // Typography
 //==========================================================================
 
@@ -52,26 +35,6 @@ $base-font-family:                Verdana, Geneva, sans-serif;
 $base-font-weight-light:          300;
 $base-font-weight-normal:         400;
 $base-font-weight-bold:           500;
-
-
-
-// Font sizes
-//==========================================================================
-
-$font-size-h1:                   ceil($base-font-size * 2.25) !default;  // ~36px
-$font-size-h2:                   floor($base-font-size * 1.88) !default; // ~30px
-$font-size-h3:                   ceil($base-font-size * 1.5) !default;   // ~24px
-$font-size-h4:                   floor($base-font-size * 1.13) !default; // ~18px
-$font-size-h5:                   floor($base-font-size * .88) !default; // ~14px
-$font-size-h6:                   ceil($base-font-size * .75) !default;  // ~12px
-
-
-
-// Zen Grid variables
-//==========================================================================
-
-$zen-column-count: 12;
-$zen-gutter-width: 20px;
 
 
 
