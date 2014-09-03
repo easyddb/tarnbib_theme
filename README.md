@@ -19,6 +19,7 @@ Grunt
   http://gruntjs.com/
 - Project settings: see Gruntfile.coffee and package.json
 - Which packages are integrated to this project:
+
 > - jshint
 > - sass compilation
 > - livereload
@@ -48,4 +49,4 @@ Editorconfig
 --------------
 - What is EditorConfig? EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. 
 - More info: http://editorconfig.org/
-- Project settings: see **.editorconfig **
+- Project settings: see **.editorconfig**

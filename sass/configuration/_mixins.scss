@@ -2,7 +2,9 @@
 //==========================================================================
 
 @mixin respond-to($media) {
-	// Sizes
+
+  // Sizes
+
 	@if $media == small {
 		@media only screen and (max-width: $breakpoint-small) { @content; }
 	}
@@ -39,6 +41,7 @@
     @media only screen and (min-width: $breakpoint-medium + 1) { @content; }
   }
 }
+
 
 
 // Breakpoints
@@ -82,33 +85,11 @@
 
 
 
-// Availability
-//==========================================================================
-
-@mixin availability($bg-color) {
-  background-color: $bg-color;
-  color: $white;
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-
-  a {
-    color: $white;
-    display: block;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
-
-
 // Typography mixins
 //==========================================================================
 
 // Function for converting a px based font-size to rem.
+
 @function calculate-rem($size) {
   $remSize: $size / 16px;
 
@@ -126,22 +107,10 @@
 
 
 
-// Placeholder text color
-//==========================================================================
-
-@mixin placeholder($color: $input-color-placeholder) {
-  &:-moz-placeholder            { color: $color; } // Firefox 4-18
-  &::-moz-placeholder           { color: $color; } // Firefox 19+
-  &:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
-}
-
-
-
 // Selection color
 //==========================================================================
 
-$prefixes: ("-moz-", "-webkit-", "");
+$prefixes: ('-moz-', '-webkit-', '');
 @mixin selection($color, $background) {
   @each $prefix in $prefixes {
     ::#{$prefix}selection {
@@ -149,25 +118,4 @@ $prefixes: ("-moz-", "-webkit-", "");
       background: $background;
     }
   }
-}
-
-
-
-// Reset filters for IE
-//==========================================================================
-
-// When you need to remove a gradient background, do not forget to use this to reset
-// the IE filter for IE9 and below.
-
-@mixin reset-filter() {
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-
-
-
-// Shadow
-//==========================================================================
-
-@mixin bshadow() {
-  @include box-shadow($gray 1px 1px 20px);
 }
