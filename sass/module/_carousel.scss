@@ -1,0 +1,144 @@
+// Variables
+// ==========================================================================
+
+$carousel-active-tab-background-color:     $color-secondary;
+$carousel-tab-background-color:            $color-primary;
+
+
+
+// Wrapper, load and inner
+//==========================================================================
+
+.rs-carousel {
+  background-color: transparent;
+
+  // Items
+
+  .rs-carousel-items {
+    padding: 24px 20px;
+    background-color: $color-primary;
+  }
+}
+
+.rs-carousel-inner {
+  padding: 0;
+  min-height: 0;
+  background-color: transparent;
+}
+
+.rs-carousel-title {
+  color: $color-primary;
+}
+
+// Item
+
+.svg .rs-carousel-items .rs-carousel-item {
+
+  &:hover:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    display: block;
+    margin-top: -21px;
+    margin-left: -21px;
+    width: 42px;
+    height: 42px;
+    background-image: url('../images/icon-plus.svg');
+    content: '';
+    pointer-events: none;
+  }
+}
+
+.rs-carousel-mask li {
+
+  // Title
+
+  .rs-carousel-item-title {
+    display: none;
+  }
+
+  &:hover .rs-carousel-item-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-color: rgba($black, .75);
+    font-weight: $base-font-weight-bold;
+  }
+}
+
+// Image
+
+.rs-carousel-item-image {
+  @include box-sizing(border-box);
+  overflow: hidden;
+  border: 1px solid $white;
+}
+
+// Next/Prev
+
+.svg .rs-carousel-action-prev,
+.svg .rs-carousel-action-next {
+  top: 50%;
+  overflow: hidden;
+  margin-top: -21px;
+  width: 42px;
+  height: 42px;
+  background: none;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.svg .rs-carousel-action-prev {
+  left: 30px;
+  background-image: url('../images/icon-left.svg');
+  background-repeat: no-repeat;
+}
+
+.svg .rs-carousel-action-next {
+  right: 30px;
+  background-image: url('../images/icon-right.svg');
+  background-repeat: no-repeat;
+}
+
+
+// Carousel tabs
+// ==========================================================================
+
+.rs-carousel-tabs {
+  @include small-medium {
+    padding: 0;
+  }
+
+  .rs-carousel-select-tabs {
+    @include border-radius(0);
+  }
+
+  .rs-carousel-list-tabs {
+
+    .rs-carousel-item {
+
+      a {
+        margin-right: 0;
+        background-color: $carousel-tab-background-color;
+
+        &:hover {
+          background-color: $carousel-active-tab-background-color;
+        }
+      }
+
+      &.active {
+        a {
+          background-color: $carousel-active-tab-background-color;
+
+          &:before {
+            border-bottom-color: $carousel-active-tab-background-color;
+          }
+        }
+      }
+    }
+  }
+}

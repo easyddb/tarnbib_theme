@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: $font-color-primary;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+}
+
+
+
+// Selection color
+//==========================================================================
+
+@include selection($white, darken($color-secondary-dark, 10%));
+
+
+
+// Layout styles
+//==========================================================================
+
+.bottom {
+  background-color: #69ac64;
+
+  &,
+  a {
+    color: $white;
+    font-weight: 700;
+    font-size: 110%;
+  }
+}
+
+.footer {
+  @include box-sizing(border-box);
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1180px;
+  background-color: $white;
+
+  // Media queries
+
+  @include till-x-large {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

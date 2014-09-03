@@ -1,0 +1,28 @@
+{
+  "name": "tarnbib_theme",
+  "version": "0.0.0",
+  "author": {
+    "name": "Andrei Bunulu",
+    "email": "bunulu@gmail.com"
+  },
+  "homepage": "",
+  "licenses": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-imagemin": "~0.5.0",
+    "load-grunt-tasks": "~0.4.0",
+    "time-grunt": "~0.3.1",
+    "jshint-stylish": "~0.1.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

@@ -1,0 +1,115 @@
+// Topbar menu
+//==========================================================================
+
+.topbar-menu {
+
+  .menu-item {
+    background-color: $color-secondary-dark;
+    color: $white;
+
+    &:hover,
+    &.active {
+      background-color: $color-secondary;
+      color: $white;
+    }
+  }
+}
+
+
+
+// Navigation, main menu and secondary menu
+//==========================================================================
+
+.main-menu,
+.secondary-menu,
+.system-user-menu {
+
+  .menu-item {
+    color: $white;
+    font-weight: 700;
+
+    &:hover,
+    &.active {
+      color: $link-color-hover;
+    }
+  }
+}
+
+
+.system-user-menu {
+
+  .menu-item {
+    color: $white;
+  }
+}
+
+
+
+// Sub menu
+//==========================================================================
+
+.sub-menu {
+
+  > li {
+
+    a {
+      color: $link-color;
+
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+  }
+
+  li {
+    &:before {
+      color: $link-color;
+    }
+  }
+}
+
+
+
+// Footer menus
+//==========================================================================
+
+.footer {
+
+  .pane-title {
+    color: $link-color;
+  }
+
+  .menu {
+
+    li {
+
+      &:before {
+        color: $link-color;
+      }
+
+      a {
+        color: $link-color;
+
+        &.active {
+          color: $link-color-hover;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Action Links
+//==========================================================================
+
+.action-links {
+
+  li {
+    color: $link-color;
+
+    &:before {
+      color: $link-color;
+    }
+  }
+}
